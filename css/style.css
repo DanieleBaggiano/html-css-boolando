@@ -5,3 +5,52 @@
     box-sizing: border-box;
 }
 
+.container {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prima-fila,
+.seconda-fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    position: relative;
+}
+
+img {
+    margin-left: 10px;
+}
+
+.contenitore-img {
+    position: relative;
+    width: 33%;
+    overflow: hidden;
+}
+
+.contenitore-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenitore-img3 {
+    position: relative;
+    
+}
+
+.heart:hover {
+    color: red;
+}
+
+.heart {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
