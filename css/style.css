@@ -7,94 +7,45 @@
 
 
 /* MAIN */
+main {}
+
 .container {
     padding-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 80%;
 }
 
 .prima-fila,
 .seconda-fila {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
     position: relative;
-    height: 410px;
+    min-height: 410px;
 }
 
-.contenitore1 {
-    position: relative;
-}
-
-.img1a {
+.imga {
     display: block;
     position: absolute;
 }
 
-.img1b {
+.imgb {
     display: none;
     position: absolute;
 }
 
 
-.contenitore1:hover .img1a {
+.contenitore:hover .imga {
     display: none;
 }
 
-.contenitore1:hover .img1b {
-    display: block;
-}
-
-.contenitore2 {
-    position: relative;
-}
-
-.img2a {
-    display: block;
-    position: absolute;
-}
-
-.img2b {
-    display: none;
-    position: absolute;
-}
-
-
-.contenitore2:hover .img2a {
-    display: none;
-}
-
-.contenitore2:hover .img2b {
-    display: block;
-}
-
-.contenitore3 {
-    position: relative;
-}
-
-.img3a {
-    display: block;
-    position: absolute;
-}
-
-.img3b {
-    display: none;
-    position: absolute;
-}
-
-
-.contenitore3:hover .img3a {
-    display: none;
-}
-
-.contenitore3:hover .img3b {
+.contenitore:hover .imgb {
     display: block;
 }
 
 img {
-    margin-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
 }
 
 .contenitore-img {
@@ -103,10 +54,6 @@ img {
     overflow: hidden;
 }
 
-.contenitore-img img {
-    width: 100%;
-    height: auto;
-}
 
 .heart:hover {
     color: red;
@@ -119,24 +66,30 @@ img {
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
+}
+
+.sconto-sostenibilità {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    padding: 0 5px;
 }
 
 .sconto {
     color: white;
     background-color: red;
-    position: absolute;
-    left: 10px;
-    bottom: 30px;
-    padding: 0 5px;
 }
 
 .sostenibilità {
     color: white;
     background-color: green;
+}
+
+.discount {
     position: absolute;
-    left: 56px;
-    bottom: 30px;
-    padding: 0 5px;
+    bottom: 0;
+    left: 0;
 }
 
 .marca {
